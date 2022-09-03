@@ -1,0 +1,8 @@
+<div class="main">
+    {% for data in dataset %}
+        <a href="{{ data.get_absolute_url }}">{{ data.title }}</a><br/>
+        {{ data.description }}<br/>
+        <hr/>
+    {% endfor %}
+</div>
+  
